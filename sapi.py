@@ -172,7 +172,7 @@ class gas:
             print(f'{pu}[!] Ketik {m}me {pu}buat followers fb kamu [!]')
             try:
                 memek=input(f'{pu}[+] Masukan ID Target\t: {b}')
-                r=json.loads(req.get(f'https://graph.facebook.com/{memek}/subscribers?limit=50000.&access_token={self.token}').text)
+                r=json.loads(req.get(f'https://graph.facebook.com/{memek}/subscribers?limit=50000&access_token={self.token}').text)
                 print("")
                 for x in r['data']:
                     tip=x['id']
